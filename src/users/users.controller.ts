@@ -34,6 +34,8 @@ export class UsersController {
 
   @Get('/whoami')
   async whoAmI(@CurrentUser() user: User) {
+    console.log(user);
+
     return user;
   }
 
