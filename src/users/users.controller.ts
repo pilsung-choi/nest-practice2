@@ -30,7 +30,7 @@ export class UsersController {
   // @Get('/whoami')
   // whoAmI(@Session() session: any) {
   //   return this.userService.findOne(session.userId);
-  // }
+  // }  reading code
 
   @Get('/whoami')
   async whoAmI(@CurrentUser() user: User) {
