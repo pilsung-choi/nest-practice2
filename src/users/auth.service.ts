@@ -5,7 +5,7 @@ import {
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { randomBytes, scrypt as _scrypt } from 'crypto';
-import { promisify } from 'util';
+import { promisify } from 'util'; // 콜백을 사용하는 함수를 받아들이고 Promise대신 사용하는 함수의 버전을 돌려줌
 
 const scrypt = promisify(_scrypt);
 
