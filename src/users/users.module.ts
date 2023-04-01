@@ -15,7 +15,7 @@ import { CurrentUserInterceptor } from './interceptors/current-user.interceptor'
     AuthService,
     {
       provide: APP_INTERCEPTOR,
-      useClass: CurrentUserInterceptor,
+      useClass: CurrentUserInterceptor, // 인터셉터를 글로벌하게 설정
     },
   ],
 })
